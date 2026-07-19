@@ -1,0 +1,8 @@
+JCDA WEBSITE - GITHUB PAGES LINK
+================================
+
+Replace the line below with the working GitHub Pages URL after the project is published:
+
+https://YOUR-GITHUB-USERNAME.github.io/OCrawford_JDarby_JCDA_Website/
+
+The GitHub Pages link must be tested before submission.  Confirm that all five pages, the stylesheet, JavaScript features, logo and photographs load correctly online.

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Community planning</title>
+  <desc id="desc">Local voices shaping practical solutions</desc>
+  <rect width="1200" height="800" fill="#eaf6ef"/>
+  <circle cx="1010" cy="120" r="180" fill="#cbe8d7"/>
+  <circle cx="165" cy="690" r="250" fill="#d8efe1"/>
+  <path d="M0 600 C220 510 390 700 590 595 C780 495 960 620 1200 510 L1200 800 L0 800 Z" fill="#0a7a42"/>
+  <path d="M0 675 C250 590 460 770 690 655 C870 565 1010 665 1200 590 L1200 800 L0 800 Z" fill="#075f34"/>
+  <circle cx="600" cy="300" r="105" fill="#ffffff" stroke="#0a7a42" stroke-width="12"/>
+  <text x="600" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="700" fill="#0a7a42">C</text>
+  <text x="600" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#123b2a">Community planning</text>
+  <text x="600" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" fill="#335b49">Local voices shaping practical solutions</text>
+</svg>

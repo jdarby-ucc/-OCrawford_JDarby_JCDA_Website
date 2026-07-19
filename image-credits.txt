@@ -1,0 +1,51 @@
+JCDA WEBSITE IMAGE CREDITS
+==========================
+
+The website uses remote photographs from free-media websites.  An internet connection is required for the photographs to load.  Local green-and-white fallback artwork is included in the images folder in case a remote photograph is unavailable.
+
+PEXELS PHOTOGRAPHS
+------------------
+
+1. Outdoor Black community gathering
+   Photographer: Mad Knoxx Deluxe
+   Photo page: https://www.pexels.com/photo/lively-outdoor-african-family-gathering-30219174/
+
+2. Black students in a classroom
+   Photographer: Monstera Production
+   Photo page: https://www.pexels.com/photo/happy-black-students-standing-in-classroom-6238012/
+
+3. Black teacher working with students
+   Photographer: Katerina Holmes
+   Photo page: https://www.pexels.com/photo/black-woman-with-students-in-classroom-5905551/
+
+4. Black teenage boys playing football
+   Photographer: Pharis Disi
+   Photo page: https://www.pexels.com/photo/black-teenage-boys-playing-soccer-12311770/
+
+5. Black community receiving food relief
+   Photographer: Lagos Food Bank Initiative
+   Photo page: https://www.pexels.com/photo/grayscale-photo-of-people-getting-food-relief-6472487/
+
+6. African women in an office meeting
+   Photographer: PICHA Stock
+   Photo page: https://www.pexels.com/photo/office-team-having-a-meeting-3869649/
+
+7. Black family outdoors
+   Photo page: https://www.pexels.com/photo/black-family-spending-weekend-on-meadow-in-urban-park-8236397/
+
+Pexels license information:
+https://www.pexels.com/license/
+
+
+WIKIMEDIA COMMONS / PUBLIC DOMAIN PHOTOGRAPHS
+---------------------------------------------
+
+8. Jamaica beach clean-up near Kingston
+   Photographer: Cpl. Justin T. Updegraff, U.S. Marine Corps
+   File page: https://commons.wikimedia.org/wiki/File:Jamaica,_17_nations_join_forces_for_massive_beach_cleanup_160626-M-TV331-133.jpg
+   License: Public domain work of the United States federal government.
+
+9. Jamaican child and volunteers during a coastal clean-up
+   Photographer: Cpl. Samuel Guerra, U.S. Marine Corps
+   File page: https://commons.wikimedia.org/wiki/File:Jamaica,_17_partner_nations_get_dirty_for_massive_beach_cleanup_160626-M-GL218-163.jpg
+   License: Public domain work of the United States federal government.

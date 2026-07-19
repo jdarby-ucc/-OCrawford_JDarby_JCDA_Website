@@ -1,0 +1,24 @@
+JCDA WEBSITE CONTRIBUTION STATEMENT
+===================================
+
+Student 1
+---------
+Full Name: Oshane Crawford
+Student ID Number: 20256996
+
+Contribution:
+Oshane contributed to the project planning, Home page, Events page, event-filtering feature, contact-form validation, website testing and preparation for GitHub Pages deployment.  He also reviewed the Jamaican community content and checked that the navigation and interactive features worked as expected.
+
+
+Student 2
+---------
+Full Name: Jodi-Kaye Darby
+Student ID Number: 20253713
+
+Contribution:
+Jodi-Kaye contributed to the project planning, About Us page, Projects/Gallery page, Contact page, external CSS styling, responsive layouts and visual testing.  She also checked the page organization, readability, image presentation and consistency across desktop, tablet and mobile layouts.
+
+
+Shared Contribution
+-------------------
+Both students contributed to planning the website, reviewing the written content, checking accessibility features, testing links and page navigation, and preparing the final project folder for submission.

@@ -1,0 +1,2051 @@
+
+
+
+/* Starts the root rule that stores reusable website values. */
+:root {
+    /* Stores “#064d2b” in the reusable variable “--green-900”. */
+    --green-900: #064d2b;
+    /* Stores “#075f34” in the reusable variable “--green-800”. */
+    --green-800: #075f34;
+    /* Stores “#08783f” in the reusable variable “--green-700”. */
+    --green-700: #08783f;
+    /* Stores “#119653” in the reusable variable “--green-600”. */
+    --green-600: #119653;
+    /* Stores “#eaf6ef” in the reusable variable “--green-100”. */
+    --green-100: #eaf6ef;
+    /* Stores “#f5fbf7” in the reusable variable “--green-050”. */
+    --green-050: #f5fbf7;
+    /* Stores “#ffffff” in the reusable variable “--white”. */
+    --white: #ffffff;
+    /* Stores “#18352a” in the reusable variable “--charcoal”. */
+    --charcoal: #18352a;
+    /* Stores “#4b6258” in the reusable variable “--grey-700”. */
+    --grey-700: #4b6258;
+    /* Stores “#c9d7d0” in the reusable variable “--grey-300”. */
+    --grey-300: #c9d7d0;
+    /* Stores “#edf2ef” in the reusable variable “--grey-100”. */
+    --grey-100: #edf2ef;
+    /* Stores “0 10px 30px rgba(6, 77, 43, 0.12)” in the reusable variable “--shadow”. */
+    --shadow: 0 10px 30px rgba(6, 77, 43, 0.12);
+    /* Stores “22px” in the reusable variable “--radius-large”. */
+    --radius-large: 22px;
+    /* Stores “14px” in the reusable variable “--radius-medium”. */
+    --radius-medium: 14px;
+    /* Stores “1180px” in the reusable variable “--content-width”. */
+    --content-width: 1180px;
+/* Ends the current CSS rule. */
+}
+
+
+/* Includes “*” in the selector group below. */
+*,
+/* Includes “*::before” in the selector group below. */
+*::before,
+/* Starts a CSS rule for “*::after”. */
+*::after {
+    /* Controls whether padding and borders count inside the set size. */
+    box-sizing: border-box;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “html”. */
+html {
+    /* Sets the “scroll-behavior” property to “auto”. */
+    scroll-behavior: auto;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “body”. */
+body {
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the text colour. */
+    color: var(--charcoal);
+    /* Selects the typefaces used for the text. */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Sets the size of the text. */
+    font-size: 16px;
+    /* Sets the vertical spacing between lines of text. */
+    line-height: 1.65;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “img”. */
+img {
+    /* Chooses the layout behaviour used by the element. */
+    display: block;
+    /* Sets the largest width the element may use. */
+    max-width: 100%;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “button” in the selector group below. */
+button,
+/* Includes “input” in the selector group below. */
+input,
+/* Includes “select” in the selector group below. */
+select,
+/* Starts a CSS rule for “textarea”. */
+textarea {
+    /* Sets the “font” property to “inherit”. */
+    font: inherit;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “a”. */
+a {
+    /* Sets the text colour. */
+    color: var(--green-800);
+    /* Sets the “text-decoration-thickness” property to “2px”. */
+    text-decoration-thickness: 2px;
+    /* Sets the “text-underline-offset” property to “4px”. */
+    text-underline-offset: 4px;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “a:hover” in the selector group below. */
+a:hover,
+/* Starts a CSS rule for “a:focus-visible”. */
+a:focus-visible {
+    /* Sets the text colour. */
+    color: var(--green-600);
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “:focus-visible”. */
+:focus-visible {
+    /* Draws an accessibility outline outside the border. */
+    outline: 3px solid var(--green-600);
+    /* Adds space between the outline and the element. */
+    outline-offset: 3px;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.container”. */
+.container {
+    /* Sets the width of the element. */
+    width: min(100% - 40px, var(--content-width));
+    /* Sets the “margin-inline” property to “auto”. */
+    margin-inline: auto;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.skip-link”. */
+.skip-link {
+    /* Chooses how the element is positioned on the page. */
+    position: absolute;
+    /* Sets the top position of a positioned element. */
+    top: -60px;
+    /* Sets the left position of a positioned element. */
+    left: 20px;
+    /* Controls which positioned element appears in front. */
+    z-index: 2000;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 12px 18px;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the text colour. */
+    color: var(--green-900);
+    /* Sets the border width, style and colour. */
+    border: 2px solid var(--green-900);
+    /* Rounds the corners of the element. */
+    border-radius: 8px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.skip-link:focus”. */
+.skip-link:focus {
+    /* Sets the top position of a positioned element. */
+    top: 16px;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.top-bar”. */
+.top-bar {
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.top-bar .container”. */
+.top-bar .container {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Distributes items along the main flex or grid axis. */
+    justify-content: space-between;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 20px;
+    /* Sets the “padding-block” property to “8px”. */
+    padding-block: 8px;
+    /* Sets the size of the text. */
+    font-size: 0.91rem;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.top-bar a”. */
+.top-bar a {
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.site-header”. */
+.site-header {
+    /* Chooses how the element is positioned on the page. */
+    position: relative;
+    /* Controls which positioned element appears in front. */
+    z-index: 1000;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the border across the bottom edge. */
+    border-bottom: 1px solid var(--grey-100);
+    /* Adds a shadow around the element. */
+    box-shadow: 0 4px 16px rgba(6, 77, 43, 0.06);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.header-inner”. */
+.header-inner {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Distributes items along the main flex or grid axis. */
+    justify-content: space-between;
+    /* Sets the smallest height the element may use. */
+    min-height: 88px;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 28px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.brand”. */
+.brand {
+    /* Chooses the layout behaviour used by the element. */
+    display: inline-flex;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 12px;
+    /* Sets the text colour. */
+    color: var(--green-900);
+    /* Controls underlines and other text decorations. */
+    text-decoration: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.brand img”. */
+.brand img {
+    /* Sets the width of the element. */
+    width: 58px;
+    /* Sets the height of the element. */
+    height: 58px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.brand-text”. */
+.brand-text {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Chooses the direction in which flex items are arranged. */
+    flex-direction: column;
+    /* Sets the vertical spacing between lines of text. */
+    line-height: 1.2;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.brand-text strong”. */
+.brand-text strong {
+    /* Sets the size of the text. */
+    font-size: 1.08rem;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.brand-text span”. */
+.brand-text span {
+    /* Sets the outside spacing above the element. */
+    margin-top: 4px;
+    /* Sets the text colour. */
+    color: var(--grey-700);
+    /* Sets the size of the text. */
+    font-size: 0.79rem;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.main-navigation ul”. */
+.main-navigation ul {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 8px;
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 0;
+    /* Controls bullets or numbers used by a list. */
+    list-style: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.main-navigation a”. */
+.main-navigation a {
+    /* Chooses the layout behaviour used by the element. */
+    display: block;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 10px 13px;
+    /* Rounds the corners of the element. */
+    border-radius: 8px;
+    /* Sets the text colour. */
+    color: var(--charcoal);
+    /* Sets how thick or bold the text appears. */
+    font-weight: 700;
+    /* Controls underlines and other text decorations. */
+    text-decoration: none;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.main-navigation a:hover” in the selector group below. */
+.main-navigation a:hover,
+/* Includes “.main-navigation a:focus-visible” in the selector group below. */
+.main-navigation a:focus-visible,
+/* Starts a CSS rule for “.main-navigation a[aria-current="page"]”. */
+.main-navigation a[aria-current="page"] {
+    /* Sets the background colour. */
+    background-color: var(--green-100);
+    /* Sets the text colour. */
+    color: var(--green-900);
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.menu-button”. */
+.menu-button {
+    /* Chooses the layout behaviour used by the element. */
+    display: none;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 10px 13px;
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+    /* Sets the border width, style and colour. */
+    border: 0;
+    /* Rounds the corners of the element. */
+    border-radius: 9px;
+    /* Changes the mouse pointer shown over the element. */
+    cursor: pointer;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 700;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.section”. */
+.section {
+    /* Sets the “padding-block” property to “78px”. */
+    padding-block: 78px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.section—soft”. */
+.section--soft {
+    /* Sets the background colour. */
+    background-color: var(--green-050);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.section—green”. */
+.section--green {
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.section-heading”. */
+.section-heading {
+    /* Sets the largest width the element may use. */
+    max-width: 720px;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 36px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.section-heading.centered”. */
+.section-heading.centered {
+    /* Sets the “margin-inline” property to “auto”. */
+    margin-inline: auto;
+    /* Controls the horizontal alignment of text. */
+    text-align: center;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.eyebrow”. */
+.eyebrow {
+    /* Chooses the layout behaviour used by the element. */
+    display: inline-block;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 10px;
+    /* Sets the text colour. */
+    color: var(--green-700);
+    /* Sets the size of the text. */
+    font-size: 0.82rem;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 800;
+    /* Sets the space between individual characters. */
+    letter-spacing: 0.12em;
+    /* Controls capitalization of the displayed text. */
+    text-transform: uppercase;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.section—green .eyebrow”. */
+.section--green .eyebrow {
+    /* Sets the text colour. */
+    color: #bfe8cf;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “h1” in the selector group below. */
+h1,
+/* Includes “h2” in the selector group below. */
+h2,
+/* Starts a CSS rule for “h3”. */
+h3 {
+    /* Sets the outside spacing above the element. */
+    margin-top: 0;
+    /* Sets the text colour. */
+    color: var(--green-900);
+    /* Sets the vertical spacing between lines of text. */
+    line-height: 1.2;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “h1”. */
+h1 {
+    /* Sets the size of the text. */
+    font-size: clamp(2.45rem, 6vw, 4.9rem);
+    /* Sets the space between individual characters. */
+    letter-spacing: -0.035em;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “h2”. */
+h2 {
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 16px;
+    /* Sets the size of the text. */
+    font-size: clamp(1.9rem, 3.8vw, 3rem);
+    /* Sets the space between individual characters. */
+    letter-spacing: -0.025em;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “h3”. */
+h3 {
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 10px;
+    /* Sets the size of the text. */
+    font-size: 1.25rem;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.section—green h2” in the selector group below. */
+.section--green h2,
+/* Starts a CSS rule for “.section—green h3”. */
+.section--green h3 {
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.lead”. */
+.lead {
+    /* Sets the size of the text. */
+    font-size: 1.14rem;
+    /* Sets the text colour. */
+    color: var(--grey-700);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.section—green .lead”. */
+.section--green .lead {
+    /* Sets the text colour. */
+    color: #e0f1e7;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.button-row”. */
+.button-row {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Allows flex items to move onto additional rows. */
+    flex-wrap: wrap;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 13px;
+    /* Sets the outside spacing above the element. */
+    margin-top: 28px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.button”. */
+.button {
+    /* Chooses the layout behaviour used by the element. */
+    display: inline-flex;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Distributes items along the main flex or grid axis. */
+    justify-content: center;
+    /* Sets the smallest height the element may use. */
+    min-height: 48px;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 12px 20px;
+    /* Sets the border width, style and colour. */
+    border: 2px solid var(--green-700);
+    /* Rounds the corners of the element. */
+    border-radius: 10px;
+    /* Sets the background colour. */
+    background-color: var(--green-700);
+    /* Sets the text colour. */
+    color: var(--white);
+    /* Changes the mouse pointer shown over the element. */
+    cursor: pointer;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 800;
+    /* Controls underlines and other text decorations. */
+    text-decoration: none;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.button:hover” in the selector group below. */
+.button:hover,
+/* Starts a CSS rule for “.button:focus-visible”. */
+.button:focus-visible {
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the “border-color” property to “var(—green-900)”. */
+    border-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.button—outline”. */
+.button--outline {
+    /* Sets the background colour. */
+    background-color: transparent;
+    /* Sets the text colour. */
+    color: var(--green-800);
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.button—outline:hover” in the selector group below. */
+.button--outline:hover,
+/* Starts a CSS rule for “.button—outline:focus-visible”. */
+.button--outline:focus-visible {
+    /* Sets the background colour. */
+    background-color: var(--green-100);
+    /* Sets the text colour. */
+    color: var(--green-900);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.button—light”. */
+.button--light {
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the “border-color” property to “var(—white)”. */
+    border-color: var(--white);
+    /* Sets the text colour. */
+    color: var(--green-900);
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.button—light:hover” in the selector group below. */
+.button--light:hover,
+/* Starts a CSS rule for “.button—light:focus-visible”. */
+.button--light:focus-visible {
+    /* Sets the background colour. */
+    background-color: var(--green-100);
+    /* Sets the “border-color” property to “var(—green-100)”. */
+    border-color: var(--green-100);
+    /* Sets the text colour. */
+    color: var(--green-900);
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.hero”. */
+.hero {
+    /* Chooses how the element is positioned on the page. */
+    position: relative;
+    /* Sets the smallest height the element may use. */
+    min-height: 650px;
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Sets horizontal and vertical alignment together. */
+    place-items: center;
+    /* Controls content that extends beyond the element’s box. */
+    overflow: hidden;
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.hero::before”. */
+.hero::before {
+    /* Supplies generated content for a pseudo-element. */
+    content: "";
+    /* Chooses how the element is positioned on the page. */
+    position: absolute;
+    /* Sets the “inset” property to “0”. */
+    inset: 0;
+    /* Continues the current CSS instruction with “background:”. */
+    background:
+        /* Includes “linear-gradient(90deg, rgba(4, 51, 28, 0.94) 0%, rgba(4, 51…” in the selector group below. */
+        linear-gradient(90deg, rgba(4, 51, 28, 0.94) 0%, rgba(4, 51, 28, 0.78) 48%, rgba(4, 51, 28, 0.3) 100%),
+        /* Continues the current CSS instruction with “var(—hero-image) center / cover no-repeat;”. */
+        var(--hero-image) center / cover no-repeat;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.hero-content”. */
+.hero-content {
+    /* Chooses how the element is positioned on the page. */
+    position: relative;
+    /* Controls which positioned element appears in front. */
+    z-index: 1;
+    /* Sets the largest width the element may use. */
+    max-width: 760px;
+    /* Sets the outside spacing to the right of the element. */
+    margin-right: auto;
+    /* Sets the “padding-block” property to “95px”. */
+    padding-block: 95px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.hero h1”. */
+.hero h1 {
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 22px;
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.hero p”. */
+.hero p {
+    /* Sets the largest width the element may use. */
+    max-width: 670px;
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the text colour. */
+    color: #e5f3eb;
+    /* Sets the size of the text. */
+    font-size: 1.18rem;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.hero-badge”. */
+.hero-badge {
+    /* Chooses the layout behaviour used by the element. */
+    display: inline-block;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 18px;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 8px 13px;
+    /* Sets the border width, style and colour. */
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    /* Rounds the corners of the element. */
+    border-radius: 999px;
+    /* Sets the background colour. */
+    background-color: rgba(255, 255, 255, 0.12);
+    /* Sets the text colour. */
+    color: var(--white);
+    /* Sets how thick or bold the text appears. */
+    font-weight: 700;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.page-banner”. */
+.page-banner {
+    /* Sets the “padding-block” property to “90px”. */
+    padding-block: 90px;
+    /* Continues the current CSS instruction with “background:”. */
+    background:
+        /* Includes “linear-gradient(rgba(6, 77, 43, 0.92), rgba(6, 77, 43, 0.92…” in the selector group below. */
+        linear-gradient(rgba(6, 77, 43, 0.92), rgba(6, 77, 43, 0.92)),
+        /* Continues the current CSS instruction with “var(—banner-image) center / cover no-repeat;”. */
+        var(--banner-image) center / cover no-repeat;
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.page-banner h1”. */
+.page-banner h1 {
+    /* Sets the largest width the element may use. */
+    max-width: 790px;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 16px;
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.page-banner p”. */
+.page-banner p {
+    /* Sets the largest width the element may use. */
+    max-width: 700px;
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the text colour. */
+    color: #e2f1e8;
+    /* Sets the size of the text. */
+    font-size: 1.13rem;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.card-grid”. */
+.card-grid {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* Sets equal spacing between grid or flex items. */
+    gap: 24px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.card-grid—four”. */
+.card-grid--four {
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.card”. */
+.card {
+    /* Sets the height of the element. */
+    height: 100%;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 26px;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the border width, style and colour. */
+    border: 1px solid var(--grey-100);
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-medium);
+    /* Adds a shadow around the element. */
+    box-shadow: var(--shadow);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.card:hover”. */
+.card:hover {
+    /* Sets the “border-color” property to “var(—green-600)”. */
+    border-color: var(--green-600);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.card-icon”. */
+.card-icon {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Sets horizontal and vertical alignment together. */
+    place-items: center;
+    /* Sets the width of the element. */
+    width: 52px;
+    /* Sets the height of the element. */
+    height: 52px;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 18px;
+    /* Rounds the corners of the element. */
+    border-radius: 50%;
+    /* Sets the background colour. */
+    background-color: var(--green-100);
+    /* Sets the text colour. */
+    color: var(--green-900);
+    /* Sets the size of the text. */
+    font-size: 1.4rem;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 900;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.card p:last-child”. */
+.card p:last-child {
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 0;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.split-layout”. */
+.split-layout {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: 1.05fr 0.95fr;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 54px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.split-layout—reverse .split-image”. */
+.split-layout--reverse .split-image {
+    /* Sets the “order” property to “-1”. */
+    order: -1;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.split-image”. */
+.split-image {
+    /* Controls content that extends beyond the element’s box. */
+    overflow: hidden;
+    /* Sets the smallest height the element may use. */
+    min-height: 420px;
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-large);
+    /* Adds a shadow around the element. */
+    box-shadow: var(--shadow);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.split-image img”. */
+.split-image img {
+    /* Sets the width of the element. */
+    width: 100%;
+    /* Sets the height of the element. */
+    height: 100%;
+    /* Sets the smallest height the element may use. */
+    min-height: 420px;
+    /* Controls how an image fills its available box. */
+    object-fit: cover;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.stat-grid”. */
+.stat-grid {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* Sets equal spacing between grid or flex items. */
+    gap: 18px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.stat-card”. */
+.stat-card {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 25px 20px;
+    /* Sets the background colour. */
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Sets the border width, style and colour. */
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-medium);
+    /* Controls the horizontal alignment of text. */
+    text-align: center;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.stat-card strong”. */
+.stat-card strong {
+    /* Chooses the layout behaviour used by the element. */
+    display: block;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 6px;
+    /* Sets the text colour. */
+    color: var(--white);
+    /* Sets the size of the text. */
+    font-size: 2.2rem;
+    /* Sets the vertical spacing between lines of text. */
+    line-height: 1;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.stat-card span”. */
+.stat-card span {
+    /* Sets the text colour. */
+    color: #dff0e6;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.featured-event”. */
+.featured-event {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: 0.85fr 1.15fr;
+    /* Controls content that extends beyond the element’s box. */
+    overflow: hidden;
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-large);
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Adds a shadow around the element. */
+    box-shadow: var(--shadow);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.featured-event-image img”. */
+.featured-event-image img {
+    /* Sets the width of the element. */
+    width: 100%;
+    /* Sets the height of the element. */
+    height: 100%;
+    /* Sets the smallest height the element may use. */
+    min-height: 430px;
+    /* Controls how an image fills its available box. */
+    object-fit: cover;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.featured-event-content”. */
+.featured-event-content {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 45px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-meta”. */
+.event-meta {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Allows flex items to move onto additional rows. */
+    flex-wrap: wrap;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 10px;
+    /* Sets the outside spacing around the element. */
+    margin: 18px 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 0;
+    /* Controls bullets or numbers used by a list. */
+    list-style: none;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.event-meta li” in the selector group below. */
+.event-meta li,
+/* Starts a CSS rule for “.tag”. */
+.tag {
+    /* Chooses the layout behaviour used by the element. */
+    display: inline-flex;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 6px 10px;
+    /* Rounds the corners of the element. */
+    border-radius: 999px;
+    /* Sets the background colour. */
+    background-color: var(--green-100);
+    /* Sets the text colour. */
+    color: var(--green-900);
+    /* Sets the size of the text. */
+    font-size: 0.88rem;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 700;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.timeline”. */
+.timeline {
+    /* Chooses how the element is positioned on the page. */
+    position: relative;
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 24px;
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 0;
+    /* Controls bullets or numbers used by a list. */
+    list-style: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.timeline::before”. */
+.timeline::before {
+    /* Supplies generated content for a pseudo-element. */
+    content: "";
+    /* Chooses how the element is positioned on the page. */
+    position: absolute;
+    /* Sets the top position of a positioned element. */
+    top: 5px;
+    /* Sets the bottom position of a positioned element. */
+    bottom: 5px;
+    /* Sets the left position of a positioned element. */
+    left: 18px;
+    /* Sets the width of the element. */
+    width: 3px;
+    /* Sets the background colour. */
+    background-color: var(--green-100);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.timeline li”. */
+.timeline li {
+    /* Chooses how the element is positioned on the page. */
+    position: relative;
+    /* Sets the inside spacing on the left side of the element. */
+    padding-left: 58px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.timeline li::before”. */
+.timeline li::before {
+    /* Supplies generated content for a pseudo-element. */
+    content: "";
+    /* Chooses how the element is positioned on the page. */
+    position: absolute;
+    /* Sets the top position of a positioned element. */
+    top: 4px;
+    /* Sets the left position of a positioned element. */
+    left: 8px;
+    /* Sets the width of the element. */
+    width: 23px;
+    /* Sets the height of the element. */
+    height: 23px;
+    /* Sets the border width, style and colour. */
+    border: 5px solid var(--white);
+    /* Rounds the corners of the element. */
+    border-radius: 50%;
+    /* Sets the background colour. */
+    background-color: var(--green-700);
+    /* Adds a shadow around the element. */
+    box-shadow: 0 0 0 2px var(--green-700);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.timeline time”. */
+.timeline time {
+    /* Chooses the layout behaviour used by the element. */
+    display: block;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 4px;
+    /* Sets the text colour. */
+    color: var(--green-700);
+    /* Sets how thick or bold the text appears. */
+    font-weight: 900;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.values-list”. */
+.values-list {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Sets equal spacing between grid or flex items. */
+    gap: 17px;
+    /* Sets the outside spacing around the element. */
+    margin: 24px 0 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 0;
+    /* Controls bullets or numbers used by a list. */
+    list-style: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.values-list li”. */
+.values-list li {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 17px;
+    /* Sets the border along the left edge. */
+    border-left: 4px solid var(--green-700);
+    /* Sets the background colour. */
+    background-color: var(--green-050);
+    /* Rounds the corners of the element. */
+    border-radius: 0 10px 10px 0;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.filter-panel”. */
+.filter-panel {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Allows flex items to move onto additional rows. */
+    flex-wrap: wrap;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 10px;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 30px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.filter-button”. */
+.filter-button {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 10px 16px;
+    /* Sets the border width, style and colour. */
+    border: 2px solid var(--green-700);
+    /* Rounds the corners of the element. */
+    border-radius: 999px;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the text colour. */
+    color: var(--green-900);
+    /* Changes the mouse pointer shown over the element. */
+    cursor: pointer;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 800;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.filter-button:hover” in the selector group below. */
+.filter-button:hover,
+/* Includes “.filter-button:focus-visible” in the selector group below. */
+.filter-button:focus-visible,
+/* Starts a CSS rule for “.filter-button.is-active”. */
+.filter-button.is-active {
+    /* Sets the background colour. */
+    background-color: var(--green-700);
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-grid”. */
+.event-grid {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Sets equal spacing between grid or flex items. */
+    gap: 24px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-card”. */
+.event-card {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: 112px 1fr;
+    /* Controls content that extends beyond the element’s box. */
+    overflow: hidden;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the border width, style and colour. */
+    border: 1px solid var(--grey-100);
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-medium);
+    /* Adds a shadow around the element. */
+    box-shadow: var(--shadow);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-card[hidden]”. */
+.event-card[hidden] {
+    /* Chooses the layout behaviour used by the element. */
+    display: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-date”. */
+.event-date {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Chooses the direction in which flex items are arranged. */
+    flex-direction: column;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Distributes items along the main flex or grid axis. */
+    justify-content: center;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 24px 15px;
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+    /* Controls the horizontal alignment of text. */
+    text-align: center;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-date strong”. */
+.event-date strong {
+    /* Sets the size of the text. */
+    font-size: 2rem;
+    /* Sets the vertical spacing between lines of text. */
+    line-height: 1;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-date span”. */
+.event-date span {
+    /* Sets the outside spacing above the element. */
+    margin-top: 5px;
+    /* Sets the size of the text. */
+    font-size: 0.86rem;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 700;
+    /* Controls capitalization of the displayed text. */
+    text-transform: uppercase;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-card-content”. */
+.event-card-content {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 24px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-card-content h3”. */
+.event-card-content h3 {
+    /* Sets the outside spacing above the element. */
+    margin-top: 10px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.event-details”. */
+.event-details {
+    /* Sets the outside spacing around the element. */
+    margin: 14px 0 0;
+    /* Sets the inside spacing on the left side of the element. */
+    padding-left: 20px;
+    /* Sets the text colour. */
+    color: var(--grey-700);
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.project-card”. */
+.project-card {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Chooses the direction in which flex items are arranged. */
+    flex-direction: column;
+    /* Controls content that extends beyond the element’s box. */
+    overflow: hidden;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the border width, style and colour. */
+    border: 1px solid var(--grey-100);
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-medium);
+    /* Adds a shadow around the element. */
+    box-shadow: var(--shadow);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.project-card img”. */
+.project-card img {
+    /* Sets the width of the element. */
+    width: 100%;
+    /* Sets the height of the element. */
+    height: 235px;
+    /* Controls how an image fills its available box. */
+    object-fit: cover;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.project-card-content”. */
+.project-card-content {
+    /* Controls how a flex item grows, shrinks and uses space. */
+    flex: 1;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 24px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.project-card footer”. */
+.project-card footer {
+    /* Sets the outside spacing above the element. */
+    margin-top: 18px;
+    /* Sets the inside spacing at the top of the element. */
+    padding-top: 16px;
+    /* Sets the border across the top edge. */
+    border-top: 1px solid var(--grey-100);
+    /* Sets the text colour. */
+    color: var(--green-800);
+    /* Sets how thick or bold the text appears. */
+    font-weight: 800;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.gallery-grid”. */
+.gallery-grid {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* Sets equal spacing between grid or flex items. */
+    gap: 18px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.gallery-item”. */
+.gallery-item {
+    /* Chooses how the element is positioned on the page. */
+    position: relative;
+    /* Controls content that extends beyond the element’s box. */
+    overflow: hidden;
+    /* Sets the smallest height the element may use. */
+    min-height: 285px;
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-medium);
+    /* Sets the background colour. */
+    background-color: var(--green-100);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.gallery-item img”. */
+.gallery-item img {
+    /* Sets the width of the element. */
+    width: 100%;
+    /* Sets the height of the element. */
+    height: 100%;
+    /* Sets the smallest height the element may use. */
+    min-height: 285px;
+    /* Controls how an image fills its available box. */
+    object-fit: cover;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.gallery-caption”. */
+.gallery-caption {
+    /* Chooses how the element is positioned on the page. */
+    position: absolute;
+    /* Sets the right position of a positioned element. */
+    right: 0;
+    /* Sets the bottom position of a positioned element. */
+    bottom: 0;
+    /* Sets the left position of a positioned element. */
+    left: 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 20px;
+    /* Sets the background colour or background layers. */
+    background: linear-gradient(transparent, rgba(4, 51, 28, 0.94));
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.gallery-caption strong”. */
+.gallery-caption strong {
+    /* Chooses the layout behaviour used by the element. */
+    display: block;
+    /* Sets the outside spacing above the element. */
+    margin-top: 24px;
+    /* Sets the size of the text. */
+    font-size: 1.05rem;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.gallery-caption span”. */
+.gallery-caption span {
+    /* Sets the size of the text. */
+    font-size: 0.88rem;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.contact-layout”. */
+.contact-layout {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: 0.8fr 1.2fr;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 42px;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: start;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.contact-panel”. */
+.contact-panel {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 32px;
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-large);
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.contact-panel h2” in the selector group below. */
+.contact-panel h2,
+/* Starts a CSS rule for “.contact-panel h3”. */
+.contact-panel h3 {
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.contact-list”. */
+.contact-list {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 20px;
+    /* Sets the outside spacing around the element. */
+    margin: 28px 0 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 0;
+    /* Controls bullets or numbers used by a list. */
+    list-style: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.contact-list li”. */
+.contact-list li {
+    /* Sets the inside spacing at the bottom of the element. */
+    padding-bottom: 18px;
+    /* Sets the border across the bottom edge. */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.contact-list li:last-child”. */
+.contact-list li:last-child {
+    /* Sets the border across the bottom edge. */
+    border-bottom: 0;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.contact-list strong”. */
+.contact-list strong {
+    /* Chooses the layout behaviour used by the element. */
+    display: block;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 4px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.contact-list a”. */
+.contact-list a {
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.contact-form”. */
+.contact-form {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 34px;
+    /* Sets the border width, style and colour. */
+    border: 1px solid var(--grey-100);
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-large);
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Adds a shadow around the element. */
+    box-shadow: var(--shadow);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-grid”. */
+.form-grid {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Sets equal spacing between grid or flex items. */
+    gap: 20px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-group”. */
+.form-group {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 7px;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-group.full-width”. */
+.form-group.full-width {
+    /* Controls which grid columns the element occupies. */
+    grid-column: 1 / -1;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-group label”. */
+.form-group label {
+    /* Sets the text colour. */
+    color: var(--green-900);
+    /* Sets how thick or bold the text appears. */
+    font-weight: 800;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.required-marker”. */
+.required-marker {
+    /* Sets the text colour. */
+    color: #a51d1d;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.form-group input” in the selector group below. */
+.form-group input,
+/* Includes “.form-group select” in the selector group below. */
+.form-group select,
+/* Starts a CSS rule for “.form-group textarea”. */
+.form-group textarea {
+    /* Sets the width of the element. */
+    width: 100%;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 13px 14px;
+    /* Sets the border width, style and colour. */
+    border: 1px solid var(--grey-300);
+    /* Rounds the corners of the element. */
+    border-radius: 9px;
+    /* Sets the background colour. */
+    background-color: var(--white);
+    /* Sets the text colour. */
+    color: var(--charcoal);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-group textarea”. */
+.form-group textarea {
+    /* Sets the smallest height the element may use. */
+    min-height: 165px;
+    /* Sets the “resize” property to “vertical”. */
+    resize: vertical;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.form-group input[aria-invalid="true"]” in the selector group below. */
+.form-group input[aria-invalid="true"],
+/* Includes “.form-group select[aria-invalid="true"]” in the selector group below. */
+.form-group select[aria-invalid="true"],
+/* Starts a CSS rule for “.form-group textarea[aria-invalid="true"]”. */
+.form-group textarea[aria-invalid="true"] {
+    /* Sets the “border-color” property to “#a51d1d”. */
+    border-color: #a51d1d;
+    /* Sets the background colour. */
+    background-color: #fff7f7;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.field-error”. */
+.field-error {
+    /* Sets the smallest height the element may use. */
+    min-height: 21px;
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the text colour. */
+    color: #9a1515;
+    /* Sets the size of the text. */
+    font-size: 0.88rem;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 700;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-message”. */
+.form-message {
+    /* Chooses the layout behaviour used by the element. */
+    display: none;
+    /* Sets the outside spacing around the element. */
+    margin: 22px 0 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 14px 16px;
+    /* Rounds the corners of the element. */
+    border-radius: 9px;
+    /* Sets how thick or bold the text appears. */
+    font-weight: 700;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-message.is-visible”. */
+.form-message.is-visible {
+    /* Chooses the layout behaviour used by the element. */
+    display: block;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-message.success”. */
+.form-message.success {
+    /* Sets the background colour. */
+    background-color: #e4f6ea;
+    /* Sets the text colour. */
+    color: #075f34;
+    /* Sets the border width, style and colour. */
+    border: 1px solid #69ad82;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.form-message.error”. */
+.form-message.error {
+    /* Sets the background colour. */
+    background-color: #fff0f0;
+    /* Sets the text colour. */
+    color: #8a1414;
+    /* Sets the border width, style and colour. */
+    border: 1px solid #d98989;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.cta-strip”. */
+.cta-strip {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Distributes items along the main flex or grid axis. */
+    justify-content: space-between;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 30px;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 40px;
+    /* Rounds the corners of the element. */
+    border-radius: var(--radius-large);
+    /* Sets the background colour. */
+    background-color: var(--green-900);
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.cta-strip h2”. */
+.cta-strip h2 {
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 8px;
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.cta-strip p”. */
+.cta-strip p {
+    /* Sets the largest width the element may use. */
+    max-width: 690px;
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the text colour. */
+    color: #dff0e6;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.site-footer”. */
+.site-footer {
+    /* Sets the inside spacing at the top of the element. */
+    padding-top: 56px;
+    /* Sets the background colour. */
+    background-color: #032d1a;
+    /* Sets the text colour. */
+    color: #d9eee2;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.footer-grid”. */
+.footer-grid {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Defines the number and width of grid columns. */
+    grid-template-columns: 1.35fr 0.75fr 0.9fr;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 38px;
+    /* Sets the inside spacing at the bottom of the element. */
+    padding-bottom: 42px;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.site-footer h2” in the selector group below. */
+.site-footer h2,
+/* Starts a CSS rule for “.site-footer h3”. */
+.site-footer h3 {
+    /* Sets the text colour. */
+    color: var(--white);
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.footer-brand”. */
+.footer-brand {
+    /* Chooses the layout behaviour used by the element. */
+    display: inline-flex;
+    /* Aligns items across the secondary flex or grid axis. */
+    align-items: center;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 13px;
+    /* Sets the outside spacing below the element. */
+    margin-bottom: 15px;
+    /* Sets the text colour. */
+    color: var(--white);
+    /* Controls underlines and other text decorations. */
+    text-decoration: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.footer-brand img”. */
+.footer-brand img {
+    /* Sets the width of the element. */
+    width: 54px;
+    /* Sets the height of the element. */
+    height: 54px;
+/* Ends the current CSS rule. */
+}
+
+/* Includes “.footer-links” in the selector group below. */
+.footer-links,
+/* Starts a CSS rule for “.footer-contact”. */
+.footer-contact {
+    /* Chooses the layout behaviour used by the element. */
+    display: grid;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 10px;
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+    /* Sets the inside spacing between the content and the border. */
+    padding: 0;
+    /* Controls bullets or numbers used by a list. */
+    list-style: none;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.site-footer a”. */
+.site-footer a {
+    /* Sets the text colour. */
+    color: #e5f4eb;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.footer-bottom”. */
+.footer-bottom {
+    /* Sets the “padding-block” property to “18px”. */
+    padding-block: 18px;
+    /* Sets the border across the top edge. */
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    /* Sets the size of the text. */
+    font-size: 0.9rem;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.footer-bottom .container”. */
+.footer-bottom .container {
+    /* Chooses the layout behaviour used by the element. */
+    display: flex;
+    /* Distributes items along the main flex or grid axis. */
+    justify-content: space-between;
+    /* Sets equal spacing between grid or flex items. */
+    gap: 20px;
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts a CSS rule for “.text-center”. */
+.text-center {
+    /* Controls the horizontal alignment of text. */
+    text-align: center;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.no-margin”. */
+.no-margin {
+    /* Sets the outside spacing around the element. */
+    margin: 0;
+/* Ends the current CSS rule. */
+}
+
+/* Starts a CSS rule for “.notice”. */
+.notice {
+    /* Sets the inside spacing between the content and the border. */
+    padding: 16px 18px;
+    /* Sets the border along the left edge. */
+    border-left: 5px solid var(--green-700);
+    /* Rounds the corners of the element. */
+    border-radius: 0 10px 10px 0;
+    /* Sets the background colour. */
+    background-color: var(--green-050);
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts responsive styles for the screen condition “@media (max-width: 991px) {”. */
+@media (max-width: 991px) {
+    /* Starts a CSS rule for “.menu-button”. */
+    .menu-button {
+        /* Chooses the layout behaviour used by the element. */
+        display: inline-flex;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.main-navigation”. */
+    .main-navigation {
+        /* Chooses how the element is positioned on the page. */
+        position: absolute;
+        /* Sets the top position of a positioned element. */
+        top: 100%;
+        /* Sets the right position of a positioned element. */
+        right: 20px;
+        /* Sets the left position of a positioned element. */
+        left: 20px;
+        /* Chooses the layout behaviour used by the element. */
+        display: none;
+        /* Sets the inside spacing between the content and the border. */
+        padding: 16px;
+        /* Sets the background colour. */
+        background-color: var(--white);
+        /* Sets the border width, style and colour. */
+        border: 1px solid var(--grey-100);
+        /* Rounds the corners of the element. */
+        border-radius: 0 0 14px 14px;
+        /* Adds a shadow around the element. */
+        box-shadow: var(--shadow);
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.main-navigation.is-open”. */
+    .main-navigation.is-open {
+        /* Chooses the layout behaviour used by the element. */
+        display: block;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.main-navigation ul”. */
+    .main-navigation ul {
+        /* Aligns items across the secondary flex or grid axis. */
+        align-items: stretch;
+        /* Chooses the direction in which flex items are arranged. */
+        flex-direction: column;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Includes “.card-grid” in the selector group below. */
+    .card-grid,
+    /* Includes “.card-grid—four” in the selector group below. */
+    .card-grid--four,
+    /* Starts a CSS rule for “.gallery-grid”. */
+    .gallery-grid {
+        /* Defines the number and width of grid columns. */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Ends the current CSS rule. */
+    }
+
+    /* Includes “.split-layout” in the selector group below. */
+    .split-layout,
+    /* Includes “.featured-event” in the selector group below. */
+    .featured-event,
+    /* Starts a CSS rule for “.contact-layout”. */
+    .contact-layout {
+        /* Defines the number and width of grid columns. */
+        grid-template-columns: 1fr;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.split-layout—reverse .split-image”. */
+    .split-layout--reverse .split-image {
+        /* Sets the “order” property to “0”. */
+        order: 0;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.featured-event-image img”. */
+    .featured-event-image img {
+        /* Sets the largest height the element may use. */
+        max-height: 430px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.stat-grid”. */
+    .stat-grid {
+        /* Defines the number and width of grid columns. */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.footer-grid”. */
+    .footer-grid {
+        /* Defines the number and width of grid columns. */
+        grid-template-columns: 1.2fr 0.8fr;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.footer-grid > :last-child”. */
+    .footer-grid > :last-child {
+        /* Controls which grid columns the element occupies. */
+        grid-column: 1 / -1;
+    /* Ends the current CSS rule. */
+    }
+/* Ends the current CSS rule. */
+}
+
+
+/* Starts responsive styles for the screen condition “@media (max-width: 767px) {”. */
+@media (max-width: 767px) {
+    /* Starts a CSS rule for “.container”. */
+    .container {
+        /* Sets the width of the element. */
+        width: min(100% - 28px, var(--content-width));
+    /* Ends the current CSS rule. */
+    }
+
+    /* Includes “.top-bar .container” in the selector group below. */
+    .top-bar .container,
+    /* Includes “.footer-bottom .container” in the selector group below. */
+    .footer-bottom .container,
+    /* Starts a CSS rule for “.cta-strip”. */
+    .cta-strip {
+        /* Aligns items across the secondary flex or grid axis. */
+        align-items: flex-start;
+        /* Chooses the direction in which flex items are arranged. */
+        flex-direction: column;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.top-bar .container”. */
+    .top-bar .container {
+        /* Sets equal spacing between grid or flex items. */
+        gap: 3px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.brand-text span”. */
+    .brand-text span {
+        /* Chooses the layout behaviour used by the element. */
+        display: none;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.header-inner”. */
+    .header-inner {
+        /* Sets the smallest height the element may use. */
+        min-height: 76px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.brand img”. */
+    .brand img {
+        /* Sets the width of the element. */
+        width: 48px;
+        /* Sets the height of the element. */
+        height: 48px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.section”. */
+    .section {
+        /* Sets the “padding-block” property to “58px”. */
+        padding-block: 58px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.hero”. */
+    .hero {
+        /* Sets the smallest height the element may use. */
+        min-height: 590px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.hero::before”. */
+    .hero::before {
+        /* Continues the current CSS instruction with “background:”. */
+        background:
+            /* Includes “linear-gradient(rgba(4, 51, 28, 0.88), rgba(4, 51, 28, 0.92…” in the selector group below. */
+            linear-gradient(rgba(4, 51, 28, 0.88), rgba(4, 51, 28, 0.92)),
+            /* Continues the current CSS instruction with “var(—hero-image) center / cover no-repeat;”. */
+            var(--hero-image) center / cover no-repeat;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.page-banner”. */
+    .page-banner {
+        /* Sets the “padding-block” property to “66px”. */
+        padding-block: 66px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Includes “.card-grid” in the selector group below. */
+    .card-grid,
+    /* Includes “.card-grid—four” in the selector group below. */
+    .card-grid--four,
+    /* Includes “.gallery-grid” in the selector group below. */
+    .gallery-grid,
+    /* Includes “.event-grid” in the selector group below. */
+    .event-grid,
+    /* Includes “.stat-grid” in the selector group below. */
+    .stat-grid,
+    /* Includes “.values-list” in the selector group below. */
+    .values-list,
+    /* Includes “.form-grid” in the selector group below. */
+    .form-grid,
+    /* Starts a CSS rule for “.footer-grid”. */
+    .footer-grid {
+        /* Defines the number and width of grid columns. */
+        grid-template-columns: 1fr;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.event-card”. */
+    .event-card {
+        /* Defines the number and width of grid columns. */
+        grid-template-columns: 88px 1fr;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.event-date”. */
+    .event-date {
+        /* Sets the “padding-inline” property to “10px”. */
+        padding-inline: 10px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Includes “.featured-event-content” in the selector group below. */
+    .featured-event-content,
+    /* Includes “.contact-form” in the selector group below. */
+    .contact-form,
+    /* Includes “.contact-panel” in the selector group below. */
+    .contact-panel,
+    /* Starts a CSS rule for “.cta-strip”. */
+    .cta-strip {
+        /* Sets the inside spacing between the content and the border. */
+        padding: 26px;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Starts a CSS rule for “.footer-grid > :last-child”. */
+    .footer-grid > :last-child {
+        /* Controls which grid columns the element occupies. */
+        grid-column: auto;
+    /* Ends the current CSS rule. */
+    }
+
+    /* Includes “.button-row” in the selector group below. */
+    .button-row,
+    /* Starts a CSS rule for “.button-row .button”. */
+    .button-row .button {
+        /* Sets the width of the element. */
+        width: 100%;
+    /* Ends the current CSS rule. */
+    }
+/* Ends the current CSS rule. */
+}
